@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rings</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+
+    <nav class="menu">
+        <div class="container">
+            <button class="menu__close">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="38.3508" width="54.2357" height="2.3327" transform="rotate(-45 0 38.3508)" fill="#020F59"/>
+                    <rect x="1.64941" width="54.2357" height="2.3327" transform="rotate(45 1.64941 0)" fill="#020F59"/>
+                </svg>
+            </button>
+            <div class="menu__wrapper">
+                <a class="logo" href="#">
+                    <img src="images/logo.png" alt="logo">
+                </a>
+                <ul class="menu__list">
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">
+                            Студія
+                        </a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">
+                            Про нас
+                        </a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">
+                            Доставка та оплата
+                        </a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">
+                            Гарантії
+                        </a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">
+                            Контакти
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu-footer">
+                <div class="menu-footer__item">
+                    <ul class="menu-footer__list">
+                        <li class="menu-footer__list-item">
+                            <a class="menu-footer__list-link" href="#">
+                                Всі обручки
+                            </a>
+                        </li>
+                        <li class="menu-footer__list-item">
+                            <a class="menu-footer__list-link" href="#">
+                                Незвичайні обручки
+                            </a>
+                        </li>
+                        <li class="menu-footer__list-item">
+                            <a class="menu-footer__list-link" href="#">
+                                Класичні обручки
+                            </a>
+                        </li>
+                        <li class="menu-footer__list-item">
+                            <a class="menu-footer__list-link" href="#">
+                                Для заручин
+                            </a>
+                        </li>
+                        <li class="menu-footer__list-item">
+                            <a class="menu-footer__list-link" href="#">
+                                Обручки з лебедями
+                            </a>
+                        </li>
+                        <li class="menu-footer__list-item">
+                            <a class="menu-footer__list-link" href="#">
+                                Парні обручки
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-footer__item">
+                    <ul class="menu-footer__list">
+                        <li class="menu-footer__list-item">
+                            <a class="menu-footer__list-link" href="#">
+                                Студія
+                            </a>
+                        </li>
+                        <li class="menu-footer__list-item">
+                            <a class="menu-footer__list-link" href="#">
+                                Про нас
+                            </a>
+                        </li>
+                        <li class="menu-footer__list-item">
+                            <a class="menu-footer__list-link" href="#">
+                                Контакти
+                            </a>
+                        </li>
+                        <li class="menu-footer__list-item">
+                            <a class="menu-footer__list-link" href="#">
+                                Доставка та оплата
+                            </a>
+                        </li>
+                        <li class="menu-footer__list-item">
+                            <a class="menu-footer__list-link" href="#">
+                                Гарантії
+                            </a>
+                        </li>
+                        <li class="menu-footer__list-item">
+                            <a class="menu-footer__list-link" href="#">
+                                Відгуки
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-footer__item">
+                    <ul class="menu-footer__list">
+                        <li class="menu-footer__list-item">
+                            <a class="menu-footer__list-link" href="#">
+                                Діамант у подарунок
+                            </a>
+                        </li>
+                        <li class="menu-footer__list-item">
+                            <a class="menu-footer__list-link" href="#">
+                                Як обрати обручку
+                            </a>
+                        </li>
+                        <li class="menu-footer__list-item">
+                            <a class="menu-footer__list-link" href="#">
+                                Про кільця для заручин
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="social-list">
+                        <li class="social-list__item">
+                            <a class="social-list__link facebook-link" href="#">
+                                <svg width="37" height="35" viewBox="0 0 37 35" fill="none">
+                                    <g opacity="1">
+                                    <circle cx="18.2441" cy="17.5" r="10.9375" fill="#020F59"/>
+                                    <path d="M19.3461 15.3332V14.0899C19.3461 13.5286 19.4734 13.2447 20.3677 13.2447H21.4898V11.1562H19.6174C17.3229 11.1562 16.5659 12.1809 16.5659 13.9398V15.3332H15.0586V17.4216H16.5659V23.687H19.3461V17.4216H21.2353L21.4898 15.3332H19.3461Z" fill="white"/>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a class="social-list__link whatsup-link" href="#">
+                                <svg width="37" height="35" viewBox="0 0 37 35" fill="none">
+                                    <g opacity="1">
+                                    <path d="M18.2858 7.00024H18.2806C12.4911 7.00024 7.7832 11.7095 7.7832 17.5002C7.7832 19.7971 8.52345 21.926 9.78214 23.6546L8.47358 27.5553L12.5095 26.2651C14.1698 27.365 16.1504 28.0002 18.2858 28.0002C24.0753 28.0002 28.7832 23.2897 28.7832 17.5002C28.7832 11.7108 24.0753 7.00024 18.2858 7.00024ZM24.3955 21.8276C24.1422 22.5429 23.1368 23.1361 22.3349 23.3094C21.7863 23.4262 21.0696 23.5194 18.6573 22.5192C15.5716 21.2409 13.5845 18.1053 13.4296 17.9019C13.2813 17.6984 12.1827 16.2416 12.1827 14.7348C12.1827 13.2281 12.9479 12.4944 13.2563 12.1794C13.5096 11.9208 13.9283 11.8027 14.33 11.8027C14.4599 11.8027 14.5767 11.8092 14.6817 11.8145C14.9901 11.8276 15.145 11.846 15.3485 12.3329C15.6018 12.9432 16.2186 14.45 16.2921 14.6049C16.367 14.7597 16.4418 14.9697 16.3368 15.1732C16.2383 15.3832 16.1517 15.4764 15.9968 15.6549C15.842 15.8334 15.695 15.9699 15.5401 16.1615C15.3983 16.3282 15.2382 16.5067 15.4167 16.8151C15.5952 17.117 16.2121 18.1237 17.1203 18.9322C18.2924 19.9756 19.2426 20.309 19.5826 20.4507C19.8359 20.5557 20.1378 20.5308 20.3228 20.3339C20.5578 20.0806 20.8478 19.6606 21.1431 19.2472C21.3531 18.9506 21.6183 18.9138 21.8965 19.0188C22.18 19.1172 23.6802 19.8588 23.9886 20.0124C24.2971 20.1672 24.5005 20.2407 24.5753 20.3707C24.6488 20.5006 24.6488 21.1109 24.3955 21.8276Z" fill="#020F59"/>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a class="social-list__link instagram-link" href="#">
+                                <svg width="36" height="35" viewBox="0 0 36 35" fill="none">
+                                    <g opacity="1">
+                                    <g clip-path="url(#clip0_1413_235)">
+                                    <path d="M20.1177 17.5C20.1177 18.6562 19.1804 19.5935 18.0242 19.5935C16.8679 19.5935 15.9307 18.6562 15.9307 17.5C15.9307 16.3438 16.8679 15.4065 18.0242 15.4065C19.1804 15.4065 20.1177 16.3438 20.1177 17.5Z" fill="#020F59"/>
+                                    <path d="M18.0244 6.5625C11.9847 6.5625 7.08691 11.4603 7.08691 17.5C7.08691 23.5397 11.9847 28.4375 18.0244 28.4375C24.0641 28.4375 28.9619 23.5397 28.9619 17.5C28.9619 11.4603 24.0641 6.5625 18.0244 6.5625ZM24.267 20.0893C24.2367 20.7579 24.1304 21.2144 23.9752 21.6139C23.6489 22.4576 22.982 23.1245 22.1383 23.4507C21.739 23.6059 21.2823 23.7121 20.6139 23.7426C19.9442 23.7732 19.7302 23.7805 18.0246 23.7805C16.3188 23.7805 16.105 23.7732 15.4351 23.7426C14.7667 23.7121 14.31 23.6059 13.9107 23.4507C13.4914 23.293 13.1119 23.0459 12.7982 22.7263C12.4787 22.4127 12.2316 22.033 12.0738 21.6139C11.9186 21.2145 11.8123 20.7579 11.7819 20.0895C11.7511 19.4196 11.7439 19.2056 11.7439 17.5C11.7439 15.7944 11.7511 15.5804 11.7818 14.9107C11.8122 14.2421 11.9183 13.7856 12.0735 13.3861C12.2312 12.967 12.4786 12.5873 12.7982 12.2737C13.1118 11.9541 13.4914 11.707 13.9105 11.5493C14.31 11.3941 14.7665 11.2879 15.4351 11.2574C16.1048 11.2268 16.3188 11.2195 18.0244 11.2195C19.7301 11.2195 19.944 11.2268 20.6138 11.2575C21.2823 11.2879 21.7388 11.3941 22.1383 11.5491C22.5574 11.7068 22.9371 11.9541 23.2508 12.2737C23.5703 12.5875 23.8176 12.967 23.9752 13.3861C24.1305 13.7856 24.2367 14.2421 24.2672 14.9107C24.2978 15.5804 24.3049 15.7944 24.3049 17.5C24.3049 19.2056 24.2978 19.4196 24.267 20.0893Z" fill="#020F59"/>
+                                    <ellipse cx="21.0322" cy="13.9453" rx="0.820312" ry="0.820312" fill="#020F59"/>
+                                    </g>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_1413_235">
+                                    <rect width="21.875" height="21.875" fill="white" transform="translate(7.08691 6.5625)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a class="social-list__link telegram-link" href="#">
+                                <svg width="37" height="35" viewBox="0 0 37 35" fill="none">
+                                    <g opacity="1">
+                                    <circle cx="18.6934" cy="17.5" r="10.9375" fill="#020F59"/>
+                                    <path d="M16.1873 19.0541L15.9701 22.0291C16.2808 22.0291 16.4153 21.8991 16.5766 21.743L18.033 20.3871L21.0507 22.5401C21.6042 22.8406 21.9941 22.6823 22.1434 22.044L24.1242 13.0017L24.1248 13.0011C24.3003 12.2041 23.8289 11.8924 23.2897 12.0879L11.6464 16.4307C10.8518 16.7311 10.8638 17.1627 11.5114 17.3582L14.4881 18.2602L21.4024 14.0454C21.7278 13.8355 22.0236 13.9516 21.7803 14.1615L16.1873 19.0541Z" fill="white"/>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>                       
+    </nav>
+
+    <header class="header">        
+        <div class="header-top">
+            <div class="container">
+                <div class="header-top__wrapper">                   
+                    <div class="header-top__item">
+                        <ul class="contact-list">
+                            <li class="contact-list__list-item">
+                                <a class="contact-list__item-link address-link" href="#">
+                                    Київ, вул. Велика Васильківська, 23/3
+                                </a>
+                            </li>
+                            <li class="contact-list__list-item">                               
+                                <a class="contact-list__item-link email-link" href="mailto:info@rings.ua">
+                                    info@rings.ua
+                                </a>
+                            </li>
+                        </ul>                       
+                    </div>
+                    <div class="header-top__item">
+                        <p class="contact-list__text">
+                            <span class="working-days">пн-пт</span> <span class="working-hours">11:00-20:00</span> 
+                        </p>
+                        <p class="contact-list__text">
+                            <span class="working-days">сб, нд</span> <span class="working-hours">11:00-17:00</span> 
+                        </p>
+                    </div>
+                    <div class="header-top__item">
+                        <ul class="contact-list">
+                            <li class="contact-list__item">
+                                <a class="contact-list__item-link phone-link" href="tel:+3808008008080">
+                                    0 800 808 080
+                                </a>
+                            </li>
+                            <li class="contact-list__item">                                
+                                <a class="contact-list__item-link phone-link" href="tel:+380444444444">
+                                    (044) 444-44-44
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header-top__item">
+                        <ul class="social-list">
+                            <li class="social-list__item">
+                                <a class="social-list__link facebook-link" href="#">
+                                    <svg width="37" height="35" viewBox="0 0 37 35" fill="none">
+                                        <g opacity="1">
+                                        <circle cx="18.2441" cy="17.5" r="10.9375" fill="#020F59"/>
+                                        <path d="M19.3461 15.3332V14.0899C19.3461 13.5286 19.4734 13.2447 20.3677 13.2447H21.4898V11.1562H19.6174C17.3229 11.1562 16.5659 12.1809 16.5659 13.9398V15.3332H15.0586V17.4216H16.5659V23.687H19.3461V17.4216H21.2353L21.4898 15.3332H19.3461Z" fill="white"/>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social-list__item">
+                                <a class="social-list__link whatsup-link" href="#">
+                                    <svg width="37" height="35" viewBox="0 0 37 35" fill="none">
+                                        <g opacity="1">
+                                        <path d="M18.2858 7.00024H18.2806C12.4911 7.00024 7.7832 11.7095 7.7832 17.5002C7.7832 19.7971 8.52345 21.926 9.78214 23.6546L8.47358 27.5553L12.5095 26.2651C14.1698 27.365 16.1504 28.0002 18.2858 28.0002C24.0753 28.0002 28.7832 23.2897 28.7832 17.5002C28.7832 11.7108 24.0753 7.00024 18.2858 7.00024ZM24.3955 21.8276C24.1422 22.5429 23.1368 23.1361 22.3349 23.3094C21.7863 23.4262 21.0696 23.5194 18.6573 22.5192C15.5716 21.2409 13.5845 18.1053 13.4296 17.9019C13.2813 17.6984 12.1827 16.2416 12.1827 14.7348C12.1827 13.2281 12.9479 12.4944 13.2563 12.1794C13.5096 11.9208 13.9283 11.8027 14.33 11.8027C14.4599 11.8027 14.5767 11.8092 14.6817 11.8145C14.9901 11.8276 15.145 11.846 15.3485 12.3329C15.6018 12.9432 16.2186 14.45 16.2921 14.6049C16.367 14.7597 16.4418 14.9697 16.3368 15.1732C16.2383 15.3832 16.1517 15.4764 15.9968 15.6549C15.842 15.8334 15.695 15.9699 15.5401 16.1615C15.3983 16.3282 15.2382 16.5067 15.4167 16.8151C15.5952 17.117 16.2121 18.1237 17.1203 18.9322C18.2924 19.9756 19.2426 20.309 19.5826 20.4507C19.8359 20.5557 20.1378 20.5308 20.3228 20.3339C20.5578 20.0806 20.8478 19.6606 21.1431 19.2472C21.3531 18.9506 21.6183 18.9138 21.8965 19.0188C22.18 19.1172 23.6802 19.8588 23.9886 20.0124C24.2971 20.1672 24.5005 20.2407 24.5753 20.3707C24.6488 20.5006 24.6488 21.1109 24.3955 21.8276Z" fill="#020F59"/>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social-list__item">
+                                <a class="social-list__link instagram-link" href="#">
+                                    <svg width="36" height="35" viewBox="0 0 36 35" fill="none">
+                                        <g opacity="1">
+                                        <g clip-path="url(#clip0_1413_235)">
+                                        <path d="M20.1177 17.5C20.1177 18.6562 19.1804 19.5935 18.0242 19.5935C16.8679 19.5935 15.9307 18.6562 15.9307 17.5C15.9307 16.3438 16.8679 15.4065 18.0242 15.4065C19.1804 15.4065 20.1177 16.3438 20.1177 17.5Z" fill="#020F59"/>
+                                        <path d="M18.0244 6.5625C11.9847 6.5625 7.08691 11.4603 7.08691 17.5C7.08691 23.5397 11.9847 28.4375 18.0244 28.4375C24.0641 28.4375 28.9619 23.5397 28.9619 17.5C28.9619 11.4603 24.0641 6.5625 18.0244 6.5625ZM24.267 20.0893C24.2367 20.7579 24.1304 21.2144 23.9752 21.6139C23.6489 22.4576 22.982 23.1245 22.1383 23.4507C21.739 23.6059 21.2823 23.7121 20.6139 23.7426C19.9442 23.7732 19.7302 23.7805 18.0246 23.7805C16.3188 23.7805 16.105 23.7732 15.4351 23.7426C14.7667 23.7121 14.31 23.6059 13.9107 23.4507C13.4914 23.293 13.1119 23.0459 12.7982 22.7263C12.4787 22.4127 12.2316 22.033 12.0738 21.6139C11.9186 21.2145 11.8123 20.7579 11.7819 20.0895C11.7511 19.4196 11.7439 19.2056 11.7439 17.5C11.7439 15.7944 11.7511 15.5804 11.7818 14.9107C11.8122 14.2421 11.9183 13.7856 12.0735 13.3861C12.2312 12.967 12.4786 12.5873 12.7982 12.2737C13.1118 11.9541 13.4914 11.707 13.9105 11.5493C14.31 11.3941 14.7665 11.2879 15.4351 11.2574C16.1048 11.2268 16.3188 11.2195 18.0244 11.2195C19.7301 11.2195 19.944 11.2268 20.6138 11.2575C21.2823 11.2879 21.7388 11.3941 22.1383 11.5491C22.5574 11.7068 22.9371 11.9541 23.2508 12.2737C23.5703 12.5875 23.8176 12.967 23.9752 13.3861C24.1305 13.7856 24.2367 14.2421 24.2672 14.9107C24.2978 15.5804 24.3049 15.7944 24.3049 17.5C24.3049 19.2056 24.2978 19.4196 24.267 20.0893Z" fill="#020F59"/>
+                                        <ellipse cx="21.0322" cy="13.9453" rx="0.820312" ry="0.820312" fill="#020F59"/>
+                                        </g>
+                                        </g>
+                                        <defs>
+                                        <clipPath id="clip0_1413_235">
+                                        <rect width="21.875" height="21.875" fill="white" transform="translate(7.08691 6.5625)"/>
+                                        </clipPath>
+                                        </defs>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social-list__item">
+                                <a class="social-list__link telegram-link" href="#">
+                                    <svg width="37" height="35" viewBox="0 0 37 35" fill="none">
+                                        <g opacity="1">
+                                        <circle cx="18.6934" cy="17.5" r="10.9375" fill="#020F59"/>
+                                        <path d="M16.1873 19.0541L15.9701 22.0291C16.2808 22.0291 16.4153 21.8991 16.5766 21.743L18.033 20.3871L21.0507 22.5401C21.6042 22.8406 21.9941 22.6823 22.1434 22.044L24.1242 13.0017L24.1248 13.0011C24.3003 12.2041 23.8289 11.8924 23.2897 12.0879L11.6464 16.4307C10.8518 16.7311 10.8638 17.1627 11.5114 17.3582L14.4881 18.2602L21.4024 14.0454C21.7278 13.8355 22.0236 13.9516 21.7803 14.1615L16.1873 19.0541Z" fill="white"/>
+                                        </g>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="header-middle">
+                <ul class="header-middle__list">
+                    <li class="header-middle__list-item">
+                        <a class="header-middle__list-link" href="#">
+                            Студія
+                        </a>
+                    </li>
+                    <li class="header-middle__list-item">
+                        <a class="header-middle__list-link" href="#">
+                            Про нас
+                        </a>
+                    </li>
+                    <li class="header-middle__list-item">
+                        <a class="header-middle__list-link" href="#">
+                            Доставка та оплата
+                        </a>
+                    </li>
+                    <li class="header-middle__list-item">
+                        <a class="header-middle__list-link" href="#">
+                            Гарантії
+                        </a>
+                    </li>
+                    <li class="header-middle__list-item">
+                        <a class="header-middle__list-link" href="#">
+                            Відгуки
+                        </a>
+                    </li>
+                </ul>
+                <div class="header-middle__form">
+                    <input class="header-middle__form-input" type="text" placeholder="Пошук прикрас">
+                    <button class="header-middle__form-btn" type="submit">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <g opacity="0.5">
+                            <path d="M9.16667 15.8333C12.8486 15.8333 15.8333 12.8486 15.8333 9.16667C15.8333 5.48477 12.8486 2.5 9.16667 2.5C5.48477 2.5 2.5 5.48477 2.5 9.16667C2.5 12.8486 5.48477 15.8333 9.16667 15.8333Z" stroke="#020F59" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M17.5 17.5L13.875 13.875" stroke="#020F59" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <h1 class="header-bottom__title">
+                    RINGS
+                </h1>
+                <p class="header-bottom__subtitle">
+                    JEWELRY STUDIO
+                </p>
+                <div class="header-bottom__wrapper">
+                    <div class="header-bottom__box">
+                        <a class="logo" href="#">
+                            <img src="images/logo.png" alt="logo">
+                        </a>
+                        <button class="menu-btn">
+                            <svg width="31" height="21" viewBox="0 0 31 21" fill="none">
+                                <rect width="31" height="2" fill="#020F59"/>
+                                <rect y="9.3335" width="31" height="2" fill="#020F59"/>
+                                <rect y="18.6667" width="31" height="2" fill="#020F59"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <ul class="catalog-list">
+                        <li class="catalog-list__item">
+                            <a class="catalog-list__link" href="#">
+                                Обручки
+                            </a>
+                        </li>
+                        <li class="catalog-list__item">
+                            <a class="catalog-list__link" href="#">
+                                Для заручин
+                            </a>
+                        </li>
+                        <li class="catalog-list__item">
+                            <a class="catalog-list__link" href="#">
+                                Весільні дуети
+                            </a>
+                        </li>
+                        <li class="catalog-list__item">
+                            <a class="catalog-list__link" href="#">
+                                На замовлення
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="user-nav">
+                        <li class="user-nav__item">
+                            <a class="user-nav__link cart-link" href="#">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z" stroke="#020F59" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z" stroke="#020F59" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L22.2 10.195L23 6H6M5 1L6.00075 6M6.00075 6L7.68 14.39L8.38755 15.5583M6.00075 6H23L22.2 10.195M6.00075 6H6M9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583" stroke="#020F59" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M8.38755 15.5583C8.02191 15.264 7.77144 14.8504 7.68 14.39L6 6H23L22.2 10.195L21.4 14.39C21.3086 14.8504 21.0581 15.264 20.6925 15.5583C20.3268 15.8526 19.8693 16.009 19.4 16H9.68C9.2107 16.009 8.75318 15.8526 8.38755 15.5583Z" fill="#020F59"/>
+                                    <path d="M7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583M7.68 14.39L6 6H23L22.2 10.195L21.4 14.39C21.3086 14.8504 21.0581 15.264 20.6925 15.5583C20.3268 15.8526 19.8693 16.009 19.4 16H9.68C9.2107 16.009 8.75318 15.8526 8.38755 15.5583M7.68 14.39L8.38755 15.5583" stroke="#020F59" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="user-nav__item">
+                            <a class="user-nav__link heart-link" href="#">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <rect width="24" height="24" fill="white"/>
+                                    <path d="M20.8401 4.61012C20.3294 4.09912 19.7229 3.69376 19.0555 3.4172C18.388 3.14064 17.6726 2.99829 16.9501 2.99829C16.2276 2.99829 15.5122 3.14064 14.8448 3.4172C14.1773 3.69376 13.5709 4.09912 13.0601 4.61012L12.0001 5.67012L10.9401 4.61012C9.90843 3.57842 8.50915 2.99883 7.05012 2.99883C5.59109 2.99883 4.19181 3.57842 3.16012 4.61012C2.12843 5.64181 1.54883 7.04108 1.54883 8.50012C1.54883 9.95915 2.12843 11.3584 3.16012 12.3901L4.22012 13.4501L12.0001 21.2301L19.7801 13.4501L20.8401 12.3901C21.3511 11.8794 21.7565 11.2729 22.033 10.6055C22.3096 9.93801 22.4519 9.2226 22.4519 8.50012C22.4519 7.77763 22.3096 7.06222 22.033 6.39476C21.7565 5.7273 21.3511 5.12087 20.8401 4.61012Z" fill="#020F59"/>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="wedding">
+            <div class="container">
+                <div class="wedding__wrapper">
+                    <div class="wedding__text">
+                        <h2 class="section-title">
+                            Як вибрати обручку?
+                        </h2>
+                        <p class="howto-text">
+                            Раніше обручки обиралися з лише двох варіантів: "булик ширше" та "бублик вужче",
+                            при цьому на гладкості сімейного життя гладкість обручки ніяк не позначається.
+                        </p>
+                        <p class="howto-text">
+                            У наш час є всеможливі варіації обручок: ажурні, комбіновані, із завитками, з діамантами та іншими дорогоцінними каменями,
+                            з емаллю чи почорнінням, з відбитками пальців...
+                        </p>
+                        <p class="howto-text">
+                            Усі обручки в Rings мають дизайн, який близький до класики та не виходить з моди, тому за актуальність Ваших каблучок можна не клопотатись.
+                        </p>
+                        <p class="howto-text">
+                            Для того, щоб вибрати каблучки, краще за все прийти та приміряти їх, оцінивши не тільки красу, але й зручність, це можливо зробити в нашому офісі.
+                            Тільки спеціаліст правильно визначить розмір, бо 90% зручності каблучки визначається правильно підібраним розміром. 
+                            Каблучка ніколи не повинна тиснути (наприклад, літом чи при фізичному навантаженні пальці потовщуються через приток крові); 
+                            але і не повинна бути занадто вільною, щоб одного разу не зісковзнула з пальця та загубилась.
+                        </p>
+                        <p class="howto-text">
+                            Довжину пальців підкреслять широкі каблучки, для не довгих пальців краще обрати каблучку повужче. 
+                            Ажурні обручки надають будь-якому образу легкості, а діаманти - розкоші. 
+                            Не забувайте, що Rings дарує в кожну обручку діамант абсолютно безкоштовно!
+                        </p>
+                        <p class="howto-text">
+                            Каблучки з візерунками, особливо якщо вони підкреслені почернінням, ніколи не набридне розглядати. 
+                            Комбіновані обручки не тільки цікаво виглядають, їх безумовній плюс ще й у тому, що вони поєднуються з будь-якими прикрасами.
+                        </p>
+                        <p class="howto-text">
+                            Якщо парі сподобались різні каблучки, то можна підібрати обручки різного дизайну, наприклад,
+                            нареченій - ажурну, а нареченому - класичну з діамантом. 
+                        </p>
+                        <p class="howto-text">
+                            В Rings на обручці можна нанести гравіювання з ініціалами, словами кохання та будь-якими іншими символами.
+                        </p>
+                    </div>
+                    <img class="wedding__img" src="images/wedding.png" alt="wedding ring">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__item">
+                    <a class="logo" href="#">
+                        <img src="images/logo.png" alt="logo">
+                    </a>
+                    <a class="footer__item-link" href="#">
+                        Політика конфіденційності
+                    </a>
+                </div>
+                <div class="footer__item">
+                    <h5 class="footer__title">
+                        Інформація
+                    </h5>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a class="footer__item-link" href="#">
+                                Студія
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__item-link" href="#">
+                                Про нас
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__item-link" href="#">
+                                Доставка та оплата
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__item-link" href="#">
+                                Гарантії
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__item-link" href="#">
+                                Відгуки
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <h5 class="footer__title">
+                        Покупцям
+                    </h5>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a class="footer__item-link" href="#">
+                                Діамант у подарунок
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__item-link" href="#">
+                                Як обрати обручку
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__item-link" href="#">
+                                Про каблучки для заручин
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <h5 class="footer__title">
+                        Асортимент
+                    </h5>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a class="footer__item-link" href="#">
+                                Всі обручки
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__item-link" href="#">
+                                Незвичайні обручки
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__item-link" href="#">
+                                Класичні обручки
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__item-link" href="#">
+                                Для заручин
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__item-link" href="#">
+                                Обручки з лебедями
+                            </a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__item-link" href="#">
+                                Парні обручки
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__item">
+                    <h5 class="footer__title">
+                        Контакти
+                    </h5>
+                    <ul class="contact-list">
+                        <li class="contact-list__item">
+                            <a class="contact-list__item-link phone-link" href="tel:+3808008008080">
+                                0 800 808 080
+                            </a>
+                        </li>
+                        <li class="contact-list__item">                                
+                            <a class="contact-list__item-link phone-link" href="tel:+380444444444">
+                                (044) 444-44-44
+                            </a>
+                        </li>
+                        <li class="contact-list__item">
+                            <a class="contact-list__item-link address-link" href="#">
+                                Київ, вул. Велика Васильківська, 23/3
+                            </a>
+                        </li>
+                        <li class="contact-list__item">                               
+                            <a class="contact-list__item-link email-link" href="mailto:info@rings.ua">
+                                info@rings.ua
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="social-list">
+                        <li class="social-list__item">
+                            <a class="social-list__link facebook-link" href="#">
+                                <svg width="37" height="35" viewBox="0 0 37 35" fill="none">
+                                    <g opacity="1">
+                                    <circle cx="18.2441" cy="17.5" r="10.9375" fill="#020F59"/>
+                                    <path d="M19.3461 15.3332V14.0899C19.3461 13.5286 19.4734 13.2447 20.3677 13.2447H21.4898V11.1562H19.6174C17.3229 11.1562 16.5659 12.1809 16.5659 13.9398V15.3332H15.0586V17.4216H16.5659V23.687H19.3461V17.4216H21.2353L21.4898 15.3332H19.3461Z" fill="white"/>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a class="social-list__link whatsup-link" href="#">
+                                <svg width="37" height="35" viewBox="0 0 37 35" fill="none">
+                                    <g opacity="1">
+                                    <path d="M18.2858 7.00024H18.2806C12.4911 7.00024 7.7832 11.7095 7.7832 17.5002C7.7832 19.7971 8.52345 21.926 9.78214 23.6546L8.47358 27.5553L12.5095 26.2651C14.1698 27.365 16.1504 28.0002 18.2858 28.0002C24.0753 28.0002 28.7832 23.2897 28.7832 17.5002C28.7832 11.7108 24.0753 7.00024 18.2858 7.00024ZM24.3955 21.8276C24.1422 22.5429 23.1368 23.1361 22.3349 23.3094C21.7863 23.4262 21.0696 23.5194 18.6573 22.5192C15.5716 21.2409 13.5845 18.1053 13.4296 17.9019C13.2813 17.6984 12.1827 16.2416 12.1827 14.7348C12.1827 13.2281 12.9479 12.4944 13.2563 12.1794C13.5096 11.9208 13.9283 11.8027 14.33 11.8027C14.4599 11.8027 14.5767 11.8092 14.6817 11.8145C14.9901 11.8276 15.145 11.846 15.3485 12.3329C15.6018 12.9432 16.2186 14.45 16.2921 14.6049C16.367 14.7597 16.4418 14.9697 16.3368 15.1732C16.2383 15.3832 16.1517 15.4764 15.9968 15.6549C15.842 15.8334 15.695 15.9699 15.5401 16.1615C15.3983 16.3282 15.2382 16.5067 15.4167 16.8151C15.5952 17.117 16.2121 18.1237 17.1203 18.9322C18.2924 19.9756 19.2426 20.309 19.5826 20.4507C19.8359 20.5557 20.1378 20.5308 20.3228 20.3339C20.5578 20.0806 20.8478 19.6606 21.1431 19.2472C21.3531 18.9506 21.6183 18.9138 21.8965 19.0188C22.18 19.1172 23.6802 19.8588 23.9886 20.0124C24.2971 20.1672 24.5005 20.2407 24.5753 20.3707C24.6488 20.5006 24.6488 21.1109 24.3955 21.8276Z" fill="#020F59"/>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a class="social-list__link instagram-link" href="#">
+                                <svg width="36" height="35" viewBox="0 0 36 35" fill="none">
+                                    <g opacity="1">
+                                    <g clip-path="url(#clip0_1413_235)">
+                                    <path d="M20.1177 17.5C20.1177 18.6562 19.1804 19.5935 18.0242 19.5935C16.8679 19.5935 15.9307 18.6562 15.9307 17.5C15.9307 16.3438 16.8679 15.4065 18.0242 15.4065C19.1804 15.4065 20.1177 16.3438 20.1177 17.5Z" fill="#020F59"/>
+                                    <path d="M18.0244 6.5625C11.9847 6.5625 7.08691 11.4603 7.08691 17.5C7.08691 23.5397 11.9847 28.4375 18.0244 28.4375C24.0641 28.4375 28.9619 23.5397 28.9619 17.5C28.9619 11.4603 24.0641 6.5625 18.0244 6.5625ZM24.267 20.0893C24.2367 20.7579 24.1304 21.2144 23.9752 21.6139C23.6489 22.4576 22.982 23.1245 22.1383 23.4507C21.739 23.6059 21.2823 23.7121 20.6139 23.7426C19.9442 23.7732 19.7302 23.7805 18.0246 23.7805C16.3188 23.7805 16.105 23.7732 15.4351 23.7426C14.7667 23.7121 14.31 23.6059 13.9107 23.4507C13.4914 23.293 13.1119 23.0459 12.7982 22.7263C12.4787 22.4127 12.2316 22.033 12.0738 21.6139C11.9186 21.2145 11.8123 20.7579 11.7819 20.0895C11.7511 19.4196 11.7439 19.2056 11.7439 17.5C11.7439 15.7944 11.7511 15.5804 11.7818 14.9107C11.8122 14.2421 11.9183 13.7856 12.0735 13.3861C12.2312 12.967 12.4786 12.5873 12.7982 12.2737C13.1118 11.9541 13.4914 11.707 13.9105 11.5493C14.31 11.3941 14.7665 11.2879 15.4351 11.2574C16.1048 11.2268 16.3188 11.2195 18.0244 11.2195C19.7301 11.2195 19.944 11.2268 20.6138 11.2575C21.2823 11.2879 21.7388 11.3941 22.1383 11.5491C22.5574 11.7068 22.9371 11.9541 23.2508 12.2737C23.5703 12.5875 23.8176 12.967 23.9752 13.3861C24.1305 13.7856 24.2367 14.2421 24.2672 14.9107C24.2978 15.5804 24.3049 15.7944 24.3049 17.5C24.3049 19.2056 24.2978 19.4196 24.267 20.0893Z" fill="#020F59"/>
+                                    <ellipse cx="21.0322" cy="13.9453" rx="0.820312" ry="0.820312" fill="#020F59"/>
+                                    </g>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_1413_235">
+                                    <rect width="21.875" height="21.875" fill="white" transform="translate(7.08691 6.5625)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a class="social-list__link telegram-link" href="#">
+                                <svg width="37" height="35" viewBox="0 0 37 35" fill="none">
+                                    <g opacity="1">
+                                    <circle cx="18.6934" cy="17.5" r="10.9375" fill="#020F59"/>
+                                    <path d="M16.1873 19.0541L15.9701 22.0291C16.2808 22.0291 16.4153 21.8991 16.5766 21.743L18.033 20.3871L21.0507 22.5401C21.6042 22.8406 21.9941 22.6823 22.1434 22.044L24.1242 13.0017L24.1248 13.0011C24.3003 12.2041 23.8289 11.8924 23.2897 12.0879L11.6464 16.4307C10.8518 16.7311 10.8638 17.1627 11.5114 17.3582L14.4881 18.2602L21.4024 14.0454C21.7278 13.8355 22.0236 13.9516 21.7803 14.1615L16.1873 19.0541Z" fill="white"/>
+                                    </g>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.min.js"></script>
+</body>
+</html>

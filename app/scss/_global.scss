@@ -1,0 +1,122 @@
+html,
+body{
+    height: 100%;
+}
+
+body{
+    background-color: #fff;
+    color: #000;
+    @extend %open-300;
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main{
+    flex-grow: 1;
+}
+
+.container{
+    max-width: 1360px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.title{
+    @extend %open-600;
+    font-size: 26px;
+    line-height: 35px;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.section-title{
+    @extend %rail-300;
+    font-size: 45px;
+    line-height: 53px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.star{
+    padding: 0;
+}
+
+.pagination{
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid rgba(#9EAFC2, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__list{
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+    }
+    &__list-item+.pagination__list-item{
+        margin-left: 10px;
+    }
+    &__btn{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    &__btn-minus{
+        margin-right: 80px;
+        @extend %link-2;
+        padding: 0 0 0 10px;
+        position: relative;
+        &::after{
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%) rotate(180deg);
+        }
+    }
+    &__btn-plus{
+        margin-left: 80px;
+        @extend %link-2;
+    }
+    &__link{
+        color: #000;
+    }
+    &__link.pagination__link-active{
+        color: $accent;
+        @extend %open-600;
+    }
+    &__btn.pagination__btn-inactive{
+        opacity: 0.5;
+    }
+}
+
+.breadcrumbs{
+    margin-bottom: 25px;
+    &__list{
+        display: flex;
+    }
+    &__list-item{
+        font-size: 14px;
+        line-height: 17px;
+        position: relative;
+        padding-right: 15px;
+        &+.breadcrumbs__list-item{
+            margin-left: 20px;
+        }
+        &::after{
+            content: '›';
+            position: absolute;
+            right: 0;
+            top: 45%;
+            transform: translateY(-50%);
+        }
+    }
+    &__link{
+        color: #000;      
+        &:hover{
+            color: $hover;
+        }
+    }
+}
