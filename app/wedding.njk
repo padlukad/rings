@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rings</title>
+    <link rel="stylesheet" href="css/wedding.min.css">
+</head>
+<body>
+
+    {% include 'app/module/_header/_header.html' %}
+
+    <main class="main">
+        <section class="breadcrumbs">
+            <div class="container">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__list-item">
+                        <a href="index.html" class="breadcrumbs__link">
+                            На головну
+                        </a>
+                    </li>
+                    <li class="breadcrumbs__list-item">
+                        <span>Каталог</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="wedding-top">
+            <div class="container">
+                <div class="wedding-top__wrapper">
+                    <div class="wedding-top__inner">
+                        <h3 class="title">
+                            Обручки
+                        </h3>
+                        <p class="wedding-top__text">
+                            Ексклюзивні обручки з оригінальним дизайном від «Rings» — відмінний вибір для закріплення союзу Вашого кохання. 
+                            В такий важливий день усе має бути ідеально і головною деталлю є обручки для "неї" та "нього" — майбутнього щасливого подружжя.
+                        </p>
+                        {% include 'app/module/_filters/_filters.html' %}
+                    </div>
+                    <div class="discount-banner" style="width: 180px; height: 364px;">
+                        <img src="images/discount-1.jpg" alt="discount banner">
+                    </div>
+                </div>
+            </div>
+        </section>
+        {% include 'app/module/_wedding-catalog/_wedding-catalog.html' %}
+    </main>
+
+    {% include 'app/module/_footer/_footer.html' %}
+
+    <script src="js/main.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+.catalog{
+    padding: 95px 0 155px;
+    margin: 200px 0 150px;
+    background-color: $accent;
+    .section-title{
+        color: #fff;
+    }
+    &__wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 40px;
+    }
+    &__item{
+        width: 100%;
+        height: 385px;
+        background-color: #fff;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:first-child{
+            background-image: url('../images/catalog-1.png');
+        }
+        &:nth-child(2){
+            background-image: url('../images/catalog-2.png');
+        }
+        &:nth-child(3){
+            background-image: url('../images/catalog-3.png');
+        }
+        &:last-child{
+            background-image: url('../images/catalog-4.png');
+        }
+    }
+    &__item-link{
+        @extend %btn-2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

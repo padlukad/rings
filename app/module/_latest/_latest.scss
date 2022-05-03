@@ -1,0 +1,41 @@
+.latest{
+    margin-bottom: 200px;
+    &__slider{
+        margin: 0 auto;
+        .slick-list{
+            padding: 0 !important;
+            max-width: calc(430px * 3);
+            margin: 0 auto;
+        }
+        .slick-prev,
+        .slick-next{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: transparent;
+            width: 14px;
+            height: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+        }
+        .slick-prev{
+            left: 0;
+        }
+        .slick-next{
+            right: 0;
+        }
+        .slick-prev.slick-disabled,
+        .slick-next.slick-disabled{
+            opacity: 0.5;
+        }
+        .slick-slide.slick-current{
+            .product-card{
+                border-bottom: 3px solid $accent;
+            }
+        }
+    }
+}

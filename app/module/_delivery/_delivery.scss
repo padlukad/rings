@@ -1,0 +1,21 @@
+.delivery{
+    padding: 100px 0 155px;
+    text-align: left;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    .section-title{
+        text-align: left;
+    }
+    &__text-box{
+        max-width: 450px;
+    }
+    &__text{
+        margin-bottom: 15px;
+        @extend %open-400;
+    }
+}
+
+.delivery{
+    background-image: url('../images/delivery.jpg');
+}

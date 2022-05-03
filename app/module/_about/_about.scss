@@ -1,0 +1,81 @@
+.about{
+    margin-bottom: 200px;
+    .section-title{
+        text-align: left;
+    }
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__text-box{
+        max-width: 640px;
+        width: 100%;
+    }
+    &__text{
+        @extend %open-400;
+        margin-bottom: 10px;
+    }
+    &__contact-box{
+        background-color: $bg;
+        padding: 80px 85px 105px 50px;
+        max-width: 410px;
+        width: 100%;
+        .title{
+            color: $accent;
+            margin-bottom: 35px;
+        }
+        .social-list{
+            margin-top: 25px;
+        }
+    }
+    .contact-list{
+        display: flex;
+        flex-direction: column;
+        &__item:first-child,
+        &__item:nth-child(3){
+            padding-left: 30px;
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                width: 25px;
+                height: 20px;           
+                left: 0;
+                top: 15%;
+            }
+        }
+        &__item:first-child{
+            order: 1; 
+            margin-top: 20px;     
+            &::before{  
+                background-image: url('../images/icons/phone.svg');
+            }
+        }
+        &__item:nth-child(2){
+            order: 0;
+        }
+        &__item:nth-child(3){
+            order: 2;
+            margin-top: 20px;
+            &::before{
+                background-image: url('../images/icons/clock.svg');            
+            }
+        }
+        &__item:last-child{
+            order: 3;
+            margin-top: 20px;
+        }
+        &__item-link{
+            @extend %open-400;
+        }
+        .address-link{
+            padding-left: 30px;
+            &:hover{
+                color: inherit;
+            }
+            &:before{
+                top: 30%;
+            }
+        }
+    }
+}

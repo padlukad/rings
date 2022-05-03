@@ -1,0 +1,216 @@
+.cart{
+    margin-bottom: 200px;
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__wrapper{
+        max-width: 690px;
+        width: 100%;
+    }
+    &__aside{
+        max-width: 525px;
+        width: 100%;
+        height: 290px;
+        padding: 60px;
+        background-color: $bg;
+        .confirm-btn{
+            @extend %btn-1;
+        }
+    }
+    &__total{
+        display: flex;
+        justify-content: space-between;
+        font-size: 40px;
+        line-height: 54px;
+        @extend %open-400;
+        margin-bottom: 40px;
+    }
+    .total-sum{
+        @extend %open-600;
+        padding-right: 30px;
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            width: 24px;
+            height: 36px;
+            background-image: url('../images/icons/hryvnia.svg');
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    &__top{
+        width: 100%;
+        font-size: 14px;
+        line-height: 17px;
+        opacity: 0.5;
+        text-align: center;
+        padding-bottom: 5px;
+        border-bottom: 1px solid rgba(#9EAFC2, 0.2);
+        .cart-item__info{
+            justify-content: flex-end;
+        }
+    }
+    .delete-btn{
+        padding: 0;
+        background-color: transparent;
+        border: none;
+        @extend %link-1;
+    }
+}
+
+.cart-item{
+    font-size: 14px;
+    line-height: 19px;
+    @extend %open-400;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__info{
+        max-width: 220px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__imgbox{
+        max-width: 100px;
+        max-height: 100px;
+        width: 100%;
+        height: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: scale-down;
+        }
+    }
+    &__model{
+        max-width: 60px;
+        width: 100%;
+        text-align: center;
+    }
+    &__num{
+        max-width: 130px;
+        width: 100%;
+    }
+    &__input{
+        width: 100%;
+        height: 38px;
+        padding: 0;
+        outline: none;
+        border: none;
+    }
+    &__price{
+        max-width: 60px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        svg{
+            margin-left: 2px;
+        }
+    }
+    &__kill{
+        max-width: 20px;
+        width: 100%;
+    }
+    .kill{
+        width: 13px;
+        height: 13px;
+        background-color: transparent;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover{
+            path{
+                fill: $hover;
+                stroke: $hover;
+            }
+        }
+    }
+    .jq-number.cart-item__input{
+        padding: 0 38px;
+        position: relative;
+    }
+    .jq-number__field{       
+        width: calc(130px - 38px - 38px);
+        height: 40px;
+        border: 1px solid rgba($accent, 0.5);
+    }
+    .jq-number__spin{        
+        position: absolute;
+        width: 38px;
+        height: 40px;
+        background: transparent;
+        cursor: pointer;
+        border: 1px solid rgba($accent, 0.5);
+        top: 0;
+    }
+    .jq-number__spin.minus{
+        left: 0;
+        border-right: none;
+        &::after{
+            content: '';
+            position: absolute;
+            height: 1px;
+            width: 13px;
+            height: 2px;
+            background-color: $accent;
+            border: none;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    .jq-number__field input {
+        text-align: center;
+        font-size: 14px;
+        line-height: 19px;
+        color: #000;
+        opacity: 0.5;
+    }
+    .jq-number__spin.plus{
+        right: 0;
+        border-left: none;
+        &::after{
+            content: '';
+            position: absolute;
+            height: 1px;
+            width: 13px;
+            height: 2px;
+            background-color: $accent;
+            border: none;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            height: 1px;
+            width: 2px;
+            height: 13px;
+            background-color: $accent;
+            border: none;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    &.killed{
+        display: none;
+    }
+}

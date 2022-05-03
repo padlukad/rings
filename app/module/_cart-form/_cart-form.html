@@ -1,0 +1,59 @@
+<div class="cart-form">
+    <img src="images/logo.png" alt="logo">
+    <button class="cart-form__close">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="38.3508" width="54.2357" height="2.3327" transform="rotate(-45 0 38.3508)" fill="#020F59"/>
+            <rect x="1.64941" width="54.2357" height="2.3327" transform="rotate(45 1.64941 0)" fill="#020F59"/>
+        </svg>
+    </button>
+    <h2 class="section-title">
+        Залиште заявку
+    </h2>
+    <p class="cart-form__subtitle">
+        і ми зв'яжемось з Вами для узгодження деталей замовлення
+    </p>
+    <form class="cart-form__form" action="#">
+        <label class="cart-form__label">
+            <p class="cart-form__text">
+                Ваше ім'я
+            </p>
+            <input class="cart-form__input cart-form__name" type="text" required>
+        </label>
+        <div class="cart-form__wrapper">
+            <label class="cart-form__label">
+                <p class="cart-form__text">
+                    Ваш телефон
+                </p> 
+                <input class="cart-form__input cart-form__phone" type="tel" placeholder="+38 (0__) ___-__-__" required>
+            </label>
+            <label class="cart-form__label">
+                <p class="cart-form__text">
+                    Ваш email
+                </p> 
+                <input class="cart-form__input" type="email">
+            </label>
+            <label class="cart-form__label">
+                <p class="cart-form__text">
+                    Місто
+                </p> 
+                <input class="cart-form__input" type="text" required>
+            </label>
+            <label class="cart-form__label">
+                <p class="cart-form__text">
+                    Адреса
+                </p> 
+                <input class="cart-form__input" type="text" required>
+            </label>
+        </div>
+        <label class="cart-form__label cart-form__checkbox">
+            <input class="cart-form__check" type="checkbox" required>
+            <div class="cart-form__agreement">
+                <span></span>
+                <p>Даю згоду на <a class="cart-form__link" href="personal-data.html" target="_blank">обробку персональних даних</a></p> 
+            </div>
+        </label>
+        <button class="cart-form__btn" type="submit">
+            Зателефонуйте мені
+        </button>
+    </form>
+</div>

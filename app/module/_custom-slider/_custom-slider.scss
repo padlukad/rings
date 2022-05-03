@@ -1,0 +1,32 @@
+.custom-slider{
+    margin-bottom: 100px;
+    &__item{
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 0;
+    }
+    .slick-dots{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        li{
+            max-width: 440px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+        li.slick-active{
+            button{
+                background-color: $accent;
+            }
+        }
+        button{
+            padding: 0;
+            height: 3px;
+            width: 100%;
+            border: none;
+            background-color: rgba(#9EAFC2, 0.2);
+            font-size: 0;
+        }
+    }
+}

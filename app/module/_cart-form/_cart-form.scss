@@ -1,0 +1,110 @@
+.cart-form{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: all .5s;
+    z-index: 1002;
+    background-color: #fff;
+    max-width: 1060px;
+    width: 100%;
+    height: 860px;
+    padding: 54px 93px 148px;
+    img{
+        margin: 0 auto;
+    }
+    .section-title{
+        margin-bottom: 5px;
+    }
+    &__subtitle{
+        text-align: center;
+        margin-bottom: 40px;
+        opacity: 0.5;
+        @extend %open-400;
+    }
+    &__label{
+        width: 100%;
+    }
+    &__input{
+        width: 100%;
+        height: 60px;
+        border: 1px solid #9EAFC2;
+        padding: 0 10px;
+        outline: none;
+    }
+    &__name{
+        margin-bottom: 20px;
+    }
+    &__text{
+        color: #9EAFC2;
+        font-size: 12px;
+        line-height: 16px;
+        @extend %open-400;
+        margin-bottom: 5px;
+    }
+    &__wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        margin-bottom: 20px;
+    }
+    &__check{
+        @extend %checkbox-hidden;
+        &:checked+.cart-form__agreement{
+            span::before{
+                content: '';
+                position: absolute;
+                width: 16px;
+                height: 12px;
+                background-image: url('../images/icons/check.svg');
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+    &__agreement{
+        color: #8F8F8F;
+        font-size: 14px;
+        line-height: 19px;
+        display: inline-flex;
+        align-items: center;
+        span{
+            position: relative;
+            width: 22px;
+            height: 22px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #9EAFC2;
+            margin-right: 20px;
+        }
+    }
+    &__link{
+        color: inherit;
+        text-decoration: underline;
+    }
+    &__btn{
+        display: block;
+        min-width: 100%;
+        @extend %btn-1;
+        margin-top: 40px;
+    }
+    &__close{
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        top: 10%;
+        left: 10%;
+    }
+}
+
+.cart-form.cart-form__active{
+    transform: translate(-50%, -50%) scale(1);
+    transition: all .5s;
+}

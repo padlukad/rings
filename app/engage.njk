@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rings</title>
+    <link rel="stylesheet" href="css/engage.min.css">
+</head>
+<body>
+
+    {% include 'app/module/_header/_header.html' %}
+
+    <main class="main">
+        <section class="breadcrumbs">
+            <div class="container">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__list-item">
+                        <a href="index.html" class="breadcrumbs__link">
+                            На головну
+                        </a>
+                    </li>
+                    <li class="breadcrumbs__list-item">
+                        <span>Каталог</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="engage-top">
+            <div class="container">
+                <div class="engage-top__wrapper">
+                    <div class="engage-top__inner">
+                        <h3 class="title">
+                            Каблучки для заручин
+                        </h3>
+                        <p class="engage-top__text">
+                            В магазині «Rings» можна вибрати ідеальну каблучку для заручин, котра виразить почуття чоловіка, що робить пропозицію руки та сердця своїй коханій. 
+                            Майбутній нареченій може пощастити стати не лише парою найкращого чоловіка на світі, але й володаркою вишуканої каблучки, що виконана із золота та 
+                            прикрашеної діамантами.
+                        </p>
+                        {% include 'app/module/_filters/_filters.html' %}
+                    </div>
+                    <div class="discount-banner" style="width: 180px; height: 364px;">
+                        <img src="images/discount-1.jpg" alt="discount banner">
+                    </div>
+                </div>
+            </div>
+        </section>
+        {% include 'app/module/_engage-catalog/_engage-catalog.html' %}
+    </main>
+
+    {% include 'app/module/_footer/_footer.html' %}
+
+    <script src="js/main.min.js"></script>
+</body>
+</html>

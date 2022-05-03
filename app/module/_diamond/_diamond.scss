@@ -1,0 +1,35 @@
+.diamond{
+    margin-bottom: 200px;
+    &__wrapper{
+        max-width: 870px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    &__text,
+    &__text-details{
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__text{
+        span{
+            margin-bottom: 10px;
+        }
+    }
+    &__text-details{
+        @extend %open-400;
+        .phone-link,
+        .email-link{
+            @extend %open-400;
+            color: #000;
+            &:hover{
+                color: $hover;
+            }
+        }
+    }
+    &__img{
+        margin: 0 auto;
+    }
+}

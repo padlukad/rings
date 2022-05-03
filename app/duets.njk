@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ua">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rings</title>
+        <link rel="stylesheet" href="css/duets.min.css">
+    </head>
+    <body>
+
+        {% include 'app/module/_header/_header.html' %}
+
+        <main class="main">
+            <section class="breadcrumbs">
+                <div class="container">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__list-item">
+                            <a href="index.html" class="breadcrumbs__link">
+                                На головну
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__list-item">
+                            <span>Каталог</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="duets-top">
+                <div class="container">
+                    <h3 class="title">
+                        Весільні дуети
+                    </h3>
+                    <div class="duets-top__wrapper">
+                        <div class="duets-top__inner">
+                            {% include 'app/module/_filters/_filters.html' %}
+                        </div>
+                        <div class="discount-banner" style="width: 180px; height: 364px;">
+                            <img src="images/discount-1.jpg" alt="discount banner">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            {% include 'app/module/_duets-catalog/_duets-catalog.html' %}
+        </main>
+
+        {% include 'app/module/_footer/_footer.html' %}
+        
+        <script src="js/main.min.js"></script>
+    </body>
+</html>

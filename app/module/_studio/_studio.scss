@@ -1,0 +1,39 @@
+.studio{
+    margin-bottom: 200px;
+    &__wrapper{
+        margin-bottom: 100px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    &__text-box{
+        max-width: 450px;
+        width: 100%;
+        &:last-child{
+            .studio__text:last-child{
+                @extend %open-600;
+            }
+        }
+    }
+    &__text{
+        margin-bottom: 10px;
+        @extend %open-400;
+        .phone-link{
+            color: inherit;
+            font-size: inherit;
+            &:hover{
+                color: $hover;
+            }
+        }
+    }
+    &__slider-imgbox{
+        max-width: 640px;
+        max-height: 510px;
+        width: 100%;
+        height: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: scale-down;
+        }
+    }
+}

@@ -1,0 +1,50 @@
+.footer{
+    padding: 60px 0;
+    background-color: $bg;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title{
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        @extend %open-300;
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .logo{
+        img{
+            margin-bottom: 10px;
+        }
+    }
+    &__item+.footer__item-link{
+        margin-top: 2px;
+    }
+    &__item{
+        .social-list{
+            margin-top: 15px;
+        }
+    }
+    &__item-link{
+        font-size: 14px;
+        line-height: 17px;
+        color: rgba(#000, 0.5);
+        &:hover{
+            color: $hover;
+        }
+    }
+    .phone-link{
+        @extend %open-400;
+        margin-bottom: 10px;
+    }
+    .email-link,
+    .address-link{
+        padding: 0;
+    }
+    .address-link::before{      
+        content: none;
+    }
+    .email-link::before{
+        content: none;
+    }
+}
