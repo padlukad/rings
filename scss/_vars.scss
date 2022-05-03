@@ -1,0 +1,109 @@
+$accent: #020F59;
+$red: #AC3121;
+$hover: #2F41AA;
+$bg: #F8F9FD;
+
+%open-300{
+    font-family: 'OpenSans-Light';
+    font-weight: 300;
+}
+%open-400{
+    font-family: 'OpenSans-Regular';
+    font-weight: 400;
+}
+%open-600{
+    font-family: 'OpenSans-SemiBold';
+    font-weight: 600;
+}
+%rail-300{
+    font-family: 'Raleway-Light';
+    font-weight: 300;
+}
+
+%btn-1,
+%btn-2,
+%btn-3{
+    max-width: 410px;
+    width: 100%;
+    height: 60px;
+    text-transform: uppercase;
+    transition: all .3s;
+    &:hover{
+        transition: all .3s;
+    }
+}
+%btn-1,
+%btn-2{
+    @extend %open-600;
+}
+%btn-1,
+%btn-3{
+    border: none;
+}
+%btn-1{
+    color: #fff;
+    background-color: $accent;
+    &:hover{
+        background-color: $hover;
+    }
+}
+%btn-2{
+    color: $accent;
+    background-color: transparent;
+    border: 1px solid $accent;
+    &:hover{
+        color: $hover;
+        border-color: $hover;
+    }
+}
+%btn-3{
+    @extend %open-400;
+    color: #000;
+    background-color: rgba(158, 175, 194, 0.5);
+    &:hover{
+        background-color: #9EAFC2;
+    }
+}
+
+%link-1,
+%link-2{
+    transition: all .3s;
+    &:hover{
+        color: $accent;
+        transition: all .3s;
+    }
+}
+%link-1{
+    @extend %open-600;
+    color: rgba(2, 15, 89, 0.5);
+    text-transform: uppercase;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+%link-2{
+    @extend %open-300;
+    color: #000;
+    font-size: 16px;
+    line-height: 25px;
+    position: relative;
+    padding-right: 10px;
+    &::after{
+        content: '';
+        position: absolute;
+        width: 6px;
+        height: 12px;
+        background-image: url('../images/icons/right-angle.svg');
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+%checkbox-hidden{
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    position: absolute;
+}
