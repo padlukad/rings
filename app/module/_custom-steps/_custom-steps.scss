@@ -1,0 +1,51 @@
+.custom-steps{
+    padding: 100px 0 145px;
+    background-color: $accent;
+    .section-title{
+        color: #fff;
+    }
+    &__wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 45px;
+    }
+    &__item{
+        max-width: 645px;
+        height: 385px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        background-color: #fff;
+        padding: 45px 60px;
+        background-repeat: no-repeat;
+        background-position: right center;
+        .title{
+            color: $accent;
+            margin-bottom: 12px;
+        }
+        &:first-child{
+            background-image: url('../images/custom/steps/1.png');
+        }
+        &:nth-child(2){
+            background-image: url('../images/custom/steps/2.png');
+        }
+        &:nth-child(3){
+            background-image: url('../images/custom/steps/3.png');
+        }
+        &:last-child{
+            background-image: url('../images/custom/steps/4.png');
+        }
+    }
+    &__step{
+        font-size: 26px;
+        line-height: 31px;
+        @extend %rail-300;
+        margin-bottom: 17px;
+    }
+    &__text,
+    &__days{
+        @extend %open-400;
+    }
+}

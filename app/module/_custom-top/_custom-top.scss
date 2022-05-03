@@ -1,0 +1,22 @@
+.custom-top{
+    padding: 195px 0 220px;
+    background-image: url('../images/custom-top-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 100px;
+    .section-title{
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    &__text{
+        @extend %open-400;
+        margin-bottom: 40px;
+    }
+    &__link{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @extend %btn-1;
+    }
+}

@@ -1,0 +1,28 @@
+@import 'vars';
+@import 'fonts';
+@import 'libs';
+@import 'reset';
+@import 'global';
+@import '../module/_header/header';
+@import '../module/_footer/footer';
+@import '../module/_filters/filters';
+@import '../module/_duets-catalog/duets-catalog';
+
+.duets-top{
+    margin-bottom: 105px;
+    .title{
+        margin-bottom: 20px;
+    }
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__inner{
+        max-width: 920px;
+        width: 100%;
+    }
+    .discount-banner{
+        margin-left: 200px;
+    }
+}

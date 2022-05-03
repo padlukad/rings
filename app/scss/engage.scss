@@ -1,0 +1,25 @@
+@import 'vars';
+@import 'fonts';
+@import 'libs';
+@import 'reset';
+@import 'global';
+@import '../module/_header/header';
+@import '../module/_footer/footer';
+@import '../module/_filters/filters';
+@import '../module/_engage-catalog/engage-catalog';
+
+.engage-top{
+    margin-bottom: 105px;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    .title{
+        margin-bottom: 15px;
+    }
+    &__text{
+        margin-bottom: 70px;
+        max-width: 870px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,42 @@
+.engagement{
+    margin-bottom: 200px;
+    .section-title{
+        text-align: left;
+    }
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+    &__top-text{
+        max-width: 640px;
+        width: 100%;
+    }
+    &__list{
+        padding-left: 30px;
+        counter-reset: my-counter;
+        margin-bottom: 30px;
+    }
+    &__list-item{
+        position: relative;
+        counter-increment: my-counter;
+        margin-bottom: 20px;
+        &::before{
+            content: counter(my-counter);
+            position: absolute;
+            font-size: 24px;
+            line-height: 24px;
+            @extend %open-600;
+            font-weight: 700;
+            color: $accent;
+            left: -30px;
+            top: 0;
+        }
+    }
+}
+
+.howto-text{
+    margin-bottom: 10px;
+    max-width: 870px;
+    width: 100%;
+}

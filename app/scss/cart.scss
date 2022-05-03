@@ -1,0 +1,28 @@
+@import 'vars';
+@import 'fonts';
+@import 'libs';
+@import 'reset';
+@import 'global';
+@import '../module/_header/header';
+@import '../module/_footer/footer';
+@import '../module/_cart/cart';
+@import '../module/_cart-form/cart-form';
+@import '../module/_cart-confirm/cart-confirm';
+
+.cart-overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(#000, 0.5);
+    z-index: 1001;
+    transform: scale(0);
+    transition: all .5s;
+}
+
+
+.cart-overlay.cart-overlay__active{
+    transform: scale(1);
+    transition: all .5s;
+}

@@ -1,0 +1,19 @@
+.wedding{
+    margin-bottom: 200px;
+    .section-title{
+        text-align: left;
+    }
+}
+
+.wedding{
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+    }
+}
+.howto-text{
+    margin-bottom: 10px;
+    max-width: 870px;
+    width: 100%;
+}

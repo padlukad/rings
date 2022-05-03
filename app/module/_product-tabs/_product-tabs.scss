@@ -1,0 +1,184 @@
+.product-tabs{
+    margin-bottom: 35px;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__content{
+        max-width: 870px;
+        width: 100%;
+    }
+    &__top{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-bottom: 15px;
+        border-bottom: 1px solid rgba(#9EAFC2, 0.2);
+        margin-bottom: 50px;
+    }
+    &__top-link{
+        justify-self: center;
+        @extend %rail-300;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 31px;
+        text-transform: uppercase;
+        color: rgba($accent, 0.5);
+        &.product-tabs__top-link--active{
+            color: $accent;
+        }
+    }
+    &__info{
+        display: none;
+        p{
+            max-width: 590px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+    &__info.product-tab-active{
+        display: block;
+    }
+    &__reviews{
+        display: none;
+    }
+    &__reviews.product-tab-active{
+        display: block;
+    }
+    &__slider{
+        margin-bottom: 55px;
+    }
+    &__slider-item{
+        height: 360px;
+        padding: 40px 30px;
+        background-color: $bg;
+        display: flex !important;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__slider-author{
+        margin-bottom: 8px;
+    }
+    &__slider-author--link{
+        @extend %open-600;
+        color: #000;
+    }
+    &__slider-text{
+        @extend %open-400;
+        margin: 15px 0 20px;
+    }
+    &__slider-imgbox{
+        display: flex;
+        margin-bottom: 28px;
+        img+img{
+            margin-left: 10px;
+        }
+        img{
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+        }
+    }
+    &__slider-data{
+        font-size: 12px;
+        line-height: 16px;
+        @extend %open-400;
+        opacity: 0.5;
+    }
+    .slick-prev,
+    .slick-next{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        border: none;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .slick-prev{
+        left: -20px;
+    }
+    .slick-next{
+        right: -20px;
+    }
+    .slick-prev.slick-disabled,
+    .slick-next.slick-disabled{
+        opacity: 0.2;
+    }
+    &__form{
+
+    }
+    &__form-top{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 20px;
+    }
+    &__form-label{
+        span{
+            font-size: 12px;
+            line-height: 16px;
+            color: #9EAFC2;
+            @extend %open-400;
+        }
+    }
+    &__input{
+        margin-top: 6px;
+        width: 100%;
+        height: 60px;
+        padding: 0 10px;
+        outline: none;
+        &:focus{
+            border-color: $hover;
+        }
+    }
+    &__name{
+        max-width: 570px;
+        border: 1px solid #9EAFC2;
+    }
+    .file-input{
+        max-width: 250px;
+        height: 60px;
+        width: 100%;
+        cursor: pointer;
+        @extend %btn-3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span{
+            text-transform: uppercase;
+            color: #000;
+            margin-bottom: 0;
+        }
+        svg{
+            margin-right: 10px;
+        }
+    }
+    &__file{
+        @extend %checkbox-hidden;
+    }
+    &__textarea{
+        &:focus{
+            border-color: $hover;
+        }
+        outline: none;
+        margin-top: 6px;
+        width: 100%;
+        height: 220px;
+        resize: none;
+        padding: 10px;
+        border: 1px solid #9EAFC2;
+        margin-bottom: 20px;
+    }
+    &__form-bottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    &__btn{
+        margin-top: 6px;
+        max-width: 525px;
+        width: 100%;
+        @extend %btn-2;
+    }
+}   

@@ -1,0 +1,33 @@
+.favorite{
+    margin-bottom: 140px;
+    &__top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.delete-btn{
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    @extend %link-1;
+}
+.favorite-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    width: 100%;
+    .product-card{
+        border-bottom: none;
+        &__heart{
+            path{
+                fill: $accent;
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.wedding-catalog{
+    margin-bottom: 200px;
+    &__content{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+    }
+    &__card{
+        border-bottom: 3px solid transparent;
+        transition: all .5s;
+        &:hover{
+            border-bottom-color: #9eafc2;
+            transition: all .5s;
+        }
+    }
+    .pagination{
+        margin-bottom: 50px;
+    }
+    &__text{
+        margin-bottom: 10px;
+        a{
+            @extend %open-600;
+            color: $accent;
+            &:hover{
+                color: $hover;
+            }
+        }
+    }
+}

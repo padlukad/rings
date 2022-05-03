@@ -1,0 +1,41 @@
+.top-slider{
+    margin-bottom: 135px;
+    &__title{
+        text-align: center;
+        margin-bottom: 10px;
+        @extend %rail-300;
+        text-transform: uppercase;
+        font-size: 32px;
+        line-height: 38px;
+    }
+    .slick-dots{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        li+li{
+            margin-left: 30px;
+        }
+        li{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        button{
+            padding: 0;
+            width: 15px;
+            height: 15px;
+            background-color: transparent;
+            border: 1px solid $accent;
+            border-radius: 50%;
+            font-size: 0;
+        }
+        .slick-active{
+            button{
+                width: 10px;
+                height: 10px;
+                background-color: $accent;
+            }
+        }
+    }
+}

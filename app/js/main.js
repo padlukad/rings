@@ -56,7 +56,7 @@ $(function() {
     });
     
     $('.cart__btn').on('click', function(){
-        $('.cart__item').remove();
+        $('.cart-item').remove();
     });
 
     $('.cart-item__input').styler();

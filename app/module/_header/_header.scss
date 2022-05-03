@@ -1,0 +1,285 @@
+.header{
+    margin-bottom: 100px;
+}
+.header-top{
+    padding: 12px 0 18px;
+    margin-bottom: 20px;
+    background-color: rgba(#9EAFC2, 0.2);
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__item:nth-child(2),
+    &__item:nth-child(3){
+        padding-left: 35px;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 20px;           
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    &__item:nth-child(2){
+        &::before{        
+            background-image: url('../images/icons/clock.svg');
+        }
+    }
+    &__item:nth-child(3){
+        &::before{        
+            background-image: url('../images/icons/phone.svg');
+        }
+    }
+}
+
+.contact-list{
+    &__item{
+        margin-bottom: 2px;
+    }
+    &__item-link{
+        font-size: 14px;
+        line-height: 17px;
+        color: #000;
+        &:hover{
+            color: $hover;
+        }
+    }
+    .address-link,
+    .email-link{
+        position: relative;
+        padding-left: 30px;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+    .address-link::before{      
+        background-image: url('../images/icons/map-pin.svg');
+    }
+    .email-link::before{
+        background-image: url('../images/icons/mail.svg');
+    }
+}
+
+.header-middle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 45px;
+    &__list{
+        display: flex;
+        li+li{
+            margin-left: 44px;
+        }
+    }
+    &__list-link{
+        font-size: 14px;
+        line-height: 17px;
+        color: #000;
+        &:hover{
+            color: $hover;
+        }
+    }
+    &__form{
+        max-width: 290px;
+        width: 100%;
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__form-input{
+        outline: none;
+        max-width: 240px;
+        width: 100%;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-bottom: 1px solid rgba(#9EAFC2, 0.5);
+        padding: 0 5px;
+        &::placeholder{
+            font-size: 14px;
+            line-height: 17px;
+            color: rgba(#9EAFC2, 0.5);
+        }
+    }
+    &__form-btn{
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        padding: 0;
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.header-bottom{
+    &__title,
+    &__subtitle{
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__title{
+        @extend %rail-300;
+        font-size: 50px;
+        line-height: 59px;
+    }
+    &__subtitle{
+        @extend %open-400;
+        margin-bottom: 40px;
+    }
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__box{
+        display: flex;
+        align-items: center;
+    }
+    .logo+.menu-btn{
+        margin-left: 43px;
+    }
+}
+
+.menu-btn{
+    width: 31px;
+    height: 20px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    transition: all .3s;
+    &:hover{
+        rect{
+            transition: all .3s;
+            fill: $hover;
+        }
+    }
+}
+
+.menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    background-color: $bg;
+    z-index: 1002;
+    transform: translateY(-200%);
+    transition: all .5s;
+    &__close{
+        position: absolute;
+        top: 60px;
+        left: 15%;
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        background-color: transparent;
+        border: none;
+    }
+    .logo{
+        display: inline-block;
+        margin-bottom: 60px;
+    }
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 60px;
+        text-align: center;
+    }
+    &__list-link{
+        @extend %rail-300;
+        font-size: 30px;
+        line-height: 35px;
+        text-transform: uppercase;
+        color: rgba(#000, 0.7);
+        transition: all .3s;
+        &:hover{
+            color: $hover;
+            transition: all .3s;
+        }
+    }
+    &__list-item+.menu__list-item{
+        margin-top: 35px;
+    }
+}
+.menu-footer{
+    margin: 60px 0 170px;
+    display: flex;
+    justify-content: space-between;
+    &__list-item+.menu-footer__list-item{
+        margin-top: 2px;
+    }
+    &__list-link{
+        font-size: 14px;
+        line-height: 19px;
+        color: #000;
+        transition: all .3s;
+        &:hover{
+            color: $hover;
+            transition: all .3s;
+        }
+    }
+    &__item:last-child{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+.menu.menu-active{
+    transform: translateY(0);
+    transition: all .5s;
+}
+
+.catalog-list{
+    display: flex;
+    li+li{
+        margin-left: 70px;
+    }
+    &__link{
+        @extend %open-400;
+        color: #000;
+        transition: all .3s;
+        &:hover{
+            transition: all .3s;
+            color: $hover;
+        }
+    }
+}
+
+.user-nav{
+    display: flex;
+    li+li{
+        margin-left: 25px;
+    }
+    &__link{
+        width: 24px;
+        height: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all .3s;
+        &:hover{
+            path{
+                transition: all .3s;
+                stroke: $hover;
+                fill: $hover;
+            }
+        }
+    }
+}

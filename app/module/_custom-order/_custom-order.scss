@@ -1,0 +1,78 @@
+.custom-order{
+    margin: 100px 0 200px;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__form{
+        max-width: 870px;
+        width: 100%;
+    }
+}
+
+.order-form{
+    &__inputs{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        margin-bottom: 20px;
+    }
+    &__label{
+        width: 100%;
+        &:nth-child(2){
+            display: flex;
+            justify-self: end;
+            align-self: end;
+            max-width: 290px;
+            @extend %btn-3;
+            justify-content: center;
+            align-items: center;
+            span{
+                margin-left: 10px;
+                @extend %open-400;
+            }
+        }
+        &:focus{
+            color: $accent;
+        }
+    }
+    &__file{
+        display: none;
+    }
+    &__input,
+    &__textarea{
+        outline: none;
+        padding: 0 10px;
+        border: 1px solid #9EAFC2;
+    }
+    &__input{
+        max-width: 430px;
+        width: 100%;
+        height: 60px;  
+    }
+    input[type="file"]{
+        width: 100%;
+        @extend %btn-3;
+        border: none;
+        padding: 0;
+    }
+    &__text{
+        margin-bottom: 5px;
+        font-size: 12px;
+        line-height: 16px;
+        @extend %open-400;
+        color: #9EAFC2;
+    }
+    &__textarea{
+        padding: 10px 10px;
+        resize: none;
+        width: 100%;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+    &__btn{
+        @extend %btn-1;
+        max-width: 870px;
+        width: 100%;
+    }
+}

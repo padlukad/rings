@@ -1,0 +1,17 @@
+.filler{
+    margin-bottom: 10px;
+    &__wrapper{
+        max-width: 830px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__line{
+        height: 2px;
+        max-width: 308px;
+        width: 100%;
+        background-color: $accent;
+    }
+}
